@@ -143,3 +143,38 @@ The game is built on coordinate updates, not direct sprite movement.
    - Movement keys are ignored.
    - Center message `Press R to restart` is shown.
    - Press `R` to reload the level.
+
+################################################################################
+## Selected Project Plan
+Sokoban
+
+I chose the coordinate-driven Sokoban implementation plan using Python and `tkinter`. The core idea is to represent walls, player, boxes, and targets as coordinates and update state through movement rules instead of pixel-based sprite movement.
+
+## Progress Summary
+
+Completed:
+- Core game loop and keyboard controls (arrow keys).
+- Coordinate-based movement and push-box logic.
+- Level loading from text maps.
+- Win-condition detection (`boxes == targets`).
+- Post-win behavior: lock movement and show `Press R to restart`.
+- Restart support with `R`.
+
+Not completed yet:
+- Random map generator algorithm implementation.
+- Solvability checker implementation.
+- Difficulty scoring/tuning for generated levels.
+- Full test coverage for generator modules.
+- Better UI
+
+## Prompt Log (Phase 1)
+
+AI models/tools used:
+- Codex
+
+Key prompts that influenced the work:
+- Generate a file dictionary/structure
+- Build Sokoban around coordinate updates with a bottom-left logical origin `(0, 0)`.
+- Support keyboard movement via arrow keys.
+- Add restart behavior on `R` and lock movement after win.
+- Show a centered `Press R to restart` message after victory.
